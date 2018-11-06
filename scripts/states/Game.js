@@ -17,8 +17,8 @@ let messageThrowBall;
 Pong.Game.prototype = {
     preload: function () {
         this.load.image('background', './img/background.png')
-        this.load.image('barra', './img/paddle.png');
-        this.load.image('bola', './img/ball.png');
+        this.load.image('paddle', './img/paddle.png');
+        this.load.image('ball', './img/ball.png');
         this.load.audio('playerSound', ['./sounds/playerSound.wav']);
         this.load.audio('botSound', ['./sounds/botSound.wav']);
     },
@@ -61,7 +61,7 @@ Pong.Game.prototype = {
     },
 
     makePaddle: function (posicaoX, posicaoY) {
-        const paddle = this.add.sprite(posicaoX, posicaoY, 'barra');
+        const paddle = this.add.sprite(posicaoX, posicaoY, 'paddle');
         this.physics.arcade.enable(paddle);
         paddle.anchor.setTo(0.5, 0.5);
         paddle.scale.setTo(0.6, 0.6);
@@ -72,7 +72,7 @@ Pong.Game.prototype = {
     },
 
     makeBall: function () {
-        const ball = this.add.sprite(this.world.centerX, this.world.centerY, 'bola');
+        const ball = this.add.sprite(this.world.centerX, this.world.centerY, 'ball');
         this.physics.arcade.enable(ball);
         ball.anchor.setTo(0.5, 0.5);
         ball.body.bounce.setTo(1.1, 1.1);

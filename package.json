@@ -1,14 +1,28 @@
 {
-  "name": "pong-gazeus",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "phaser": "^2.6.2"
-  }
+    "app_name": "PongGazeus",
+    "author": "",
+    "dependencies": {
+        "phaser": "^2.6.2"
+    },
+    "license": "ISC",
+    "main": "index.html",
+    "name": "pong-gazeus",
+    "nodejs": false,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "1.0.0",
+    "webkit": {},
+    "window": {
+        "as_desktop": false,
+        "frame": false,
+        "fullscreen": false,
+        "height": 600,
+        "id": "Gazeus",
+        "position": "center",
+        "resizable": true,
+        "title": "Gazeus",
+        "visible": false,
+        "width": 800
+    }
 }
