@@ -1,5 +1,5 @@
-var game = new Phaser.Game(800,600, Phaser.AUTO);
-    game.state.add('Inicio', Pong.Inicio);
-    game.state.add('Jogo', Pong.Jogo);
-    game.state.add('FimDeJogo', Pong.FimDeJogo);
-    game.state.start('Inicio');
+var game = new Phaser.Game(800,600, Phaser.AUTO, 'game-container');
+    game.state.add('Start', Pong.Start);
+    game.state.add('Game', Pong.Game);
+    game.state.add('EndGame', Pong.EndGame);
+    game.state.start('Start');
